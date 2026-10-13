@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KingCretot Experience — Reading Foundations Grades 2–3</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0A1F3D;--gold:#C9A84C;--cream:#FAF7EF;--blue:#0047BA;--ink:#1d2733;--line:#E7E0CF;--display:'Fraunces',serif;--body:'Inter',sans-serif;--mono:'IBM Plex Mono',monospace;}
+*{box-sizing:border-box}
+body{margin:0;font-family:var(--body);color:var(--ink);background:#fff;line-height:1.55}
+.mast{background:var(--navy);color:#fff;padding:46px 24px 40px}
+.wrap{max-width:1080px;margin:0 auto}
+.brand{font-family:var(--display);font-weight:700;font-size:30px;letter-spacing:.2px}
+.tag{font-family:var(--mono);font-size:12px;letter-spacing:1px;margin-top:6px}
+.tag .e1{color:var(--blue)}.tag .e2{color:var(--gold)}.tag .e3{color:#DB2F30}
+.rule{border:none;border-top:2px solid var(--gold);margin:20px 0;max-width:120px}
+.mast h1{font-family:var(--display);font-weight:600;font-size:34px;margin:6px 0 8px}
+.mast p{max-width:640px;color:#c7d2e0;font-size:16px;margin:0}
+.intro{background:var(--cream);border-bottom:1px solid var(--line);padding:22px 24px}
+.intro .wrap{display:flex;gap:26px;flex-wrap:wrap;font-size:14px;color:#4a5666}
+.intro b{color:var(--navy)}
+main{padding:34px 24px 10px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px}
+.card{border:1px solid var(--line);border-radius:14px;padding:20px 20px 18px;background:#fff;transition:.15s;box-shadow:0 1px 0 rgba(10,31,61,.03)}
+.card:hover{border-color:var(--gold);box-shadow:0 6px 22px rgba(10,31,61,.08);transform:translateY(-2px)}
+.card.milestone{background:var(--navy);border-color:var(--navy)}
+.card.milestone .wk{color:var(--gold)}
+.card.milestone h3{color:#fff}
+.card.milestone .sub{color:#c7d2e0}
+.card.milestone .btn.primary{background:var(--gold);color:var(--navy)}
+.card.milestone .btn.primary:hover{background:#dcbf6c}
+.wk{font-family:var(--mono);font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#9A7D20}
+.card h3{font-family:var(--display);font-weight:600;font-size:21px;color:var(--navy);margin:5px 0 10px;line-height:1.25}
+.card .sub{color:#5f6b79;font-size:13px;margin:0 0 14px;line-height:1.5}
+.tags{margin-bottom:14px}
+.tag.t-math,.tag.t-review{display:inline-block;font-family:var(--mono);font-size:10px;letter-spacing:1px;text-transform:uppercase;padding:3px 9px;border-radius:999px}
+.t-math{background:#eef3fe;color:#2b56b8}.t-review{background:#e9f6f6;color:#1d6f70}
+.links{display:flex;flex-direction:column;gap:8px}
+.btn{display:block;text-align:center;text-decoration:none;font-weight:600;font-size:14px;padding:11px 14px;border-radius:10px;transition:.15s}
+.btn.primary{background:var(--navy);color:#fff}
+.btn.primary:hover{background:#13294b}
+footer{margin-top:34px;border-top:1px solid var(--line);padding:22px 24px;color:#7d8794;font-size:13px}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+footer b{color:var(--navy)}
+.fl{height:3px;width:60px;background:var(--gold);border-radius:2px;margin-bottom:12px}
+.block{margin:30px 0 14px}.block:first-child{margin-top:0}
+.block h2{font-family:var(--display);font-weight:600;font-size:22px;color:var(--navy);margin:0 0 4px}
+.block p{margin:0;color:#6b7684;font-size:14px}
+.block .fl{margin-bottom:10px}
+@media(max-width:560px){.mast h1{font-size:27px}.brand{font-size:25px}}
+
+.tag.t-read,.tag.t-badge,.tag.t-pass{display:inline-block;font-family:var(--mono);font-size:10px;letter-spacing:1px;text-transform:uppercase;padding:3px 9px;border-radius:999px;margin:0 4px 4px 0}
+.t-read{background:#eef3fe;color:#2b56b8}.t-badge{background:#fbf3dd;color:#92731a}.t-pass{background:#e6f4ea;color:#1e7a3c}
+.card.milestone .t-badge{background:rgba(201,168,76,.18);color:var(--gold)}
+.card.done{border-color:#9ccfa9}
+.note{max-width:1080px;margin:0 auto 6px;font-size:13px;color:#6b7684}
+.reset{background:none;border:none;color:#7d8794;text-decoration:underline;font:inherit;font-size:13px;cursor:pointer;padding:0}
+</style>
+</head>
+<body>
+<header class="mast"><div class="wrap">
+  <div class="brand">KingCretot Experience</div>
+  <div class="tag"><span class="e1">EDUCATE.</span>&nbsp;&nbsp;<span class="e2">EMPOWER.</span>&nbsp;&nbsp;<span class="e3">EXCEL.</span></div>
+  <hr class="rule">
+  <h1>KCE Reading Foundations — Grades 2–3</h1>
+  <p>Decode. Read. Soar. Eight units that take a young reader from hearing sounds to reading for meaning: phonics, blends, vowel patterns and fluency. Each unit has seven lessons and a capstone.</p>
+</div></header>
+<div class="intro"><div class="wrap">
+  <div><b>8 units, 64 lessons</b> · each unit ends with a capstone</div>  <div><b>Sounds to stories</b> · phonics through comprehension</div>  <div><b>Badges and progress</b> · saved on this device</div>
+</div></div>
+<main class="wrap">
+  <p class="note"><span id="prog">Lessons passed on this device show a green check. Pass a lesson with 90% to earn its badge.</span> <a href="KCE_RF_Badges.html" style="color:#0047BA;font-weight:600">See badges &amp; certificates →</a></p>
+  <section class="block"><div class="fl"></div><h2>Unit 1 · Sounds First</h2><p>Phonemic awareness &amp; letter sounds.</p></section>
+  <div class="grid">
+<article class="card" data-id="U1L1"><div class="wk">Unit 1 · Lesson 1</div><h3>Rhyme Time</h3><p class="sub">Hearing words that end the same</p><div class="tags"><span class="tag t-read">Reading</span><span class="tag t-badge">Badge: Rhyme Star</span></div><div class="links"><a class="btn primary" href="KCE_RF_U1L1_RhymeTime.html">Open lesson</a></div></article>
+<article class="card" data-id="U1L2"><div class="wk">Unit 1 · Lesson 2</div><h3>First Sounds</h3><p class="sub">The first sound in a word</p><div class="tags"><span class="tag t-read">Reading</span><span class="tag t-badge">Badge: Sound Starter</span></div><div class="links"><a class="btn primary" href="KCE_RF_U1L2_FirstSounds.html">Open lesson</a></div></article>
+<article class="card" data-id="U1L3"><div class="wk">Unit 1 · Lesson 3</div><h3>Last Sounds</h3><p class="sub">The ending sound in a word</p><div class="tags"><span class="tag t-read">Reading</span><span class="tag t-badge">Badge: Ending Expert</span></div><div class="links"><a class="btn primary" href="KCE_RF_U1L3_LastSounds.html">Open lesson</a></div></article>
+<article class="card" data-id="U1L4"><div class="wk">Unit 1 · Lesson 4</div><h3>Middle (Vowel) Sounds</h3><p class="sub">The vowel sound in the middle</p><div class="tags"><span class="tag t-read">Reading</span><span class="tag t-badge">Badge: Middle Master</span></div><div class="links"><a class="btn primary" href="KCE_RF_U1L4_MiddleSounds.html">Open lesson</a></div></article>
+<article class="card" data-id="U1L5"><div class="wk">Unit 1 · Lesson 5</div><h3>Blending Sounds → cat</h3><p class="sub">Pushing sounds together</p><div class="tags"><span class="tag t-read">Reading</span><span class="tag t-badge">Badge: Blending Boss</span></div><div class="links"><a class="btn primary" href="KCE_RF_U1L5_Blending.html">Open lesson</a></div></article>
+<article class="card" data-id="U1L6"><div class="wk">Unit 1 · Lesson 6</div><h3>Segmenting Sounds</h3><p class="sub">Breaking a word into sounds</p><div class="tags"><span class="tag t-read">Reading</span><span class="tag t-badge">Badge: Sound Splitter</span></div><div class="links"><a class="btn primary" href="KCE_RF_U1L6_Segmenting.html">Open lesson</a></div></article>
+<article class="card" data-id="U1L7"><div class="wk">Unit 1 · Lesson 7</div><h3>Letter–Sound Match</h3><p class="sub">Matching letters to sounds</p><div class="tags"><span class="tag t-read">Reading</span><span class="tag t-badge">Badge: Match Master</span></div><div class="links"><a class="btn primary" href="KCE_RF_U1L7_LetterSound.html">Open lesson</a></div></article>
+<article class="card milestone" data-id="U1L8"><div class="wk">Unit 1 · Capstone</div><h3>Sound Detective</h3><p class="sub">Unit 1 capstone</p><div class="tags"><span class="tag t-read">Reading</span><span class="tag t-badge">Badge: Sound Detective</span></div><div class="links"><a class="btn primary" href="KCE_RF_U1L8_SoundDetective.html">Open capstone</a></div></article>
+  </div>
+  <section class="block"><div class="fl"></div><h2>Unit 2 · Short Vowels &amp; CVC</h2><p>Reading simple 3-letter words.</p></section>
+  <div class="grid">
+<article class="card" data-id="U2L1"><div class="wk">Unit 2 · Lesson 1</div><h3>Short a</h3><p class="sub">cat, map, bag</p><div class="tags"><span class="tag t-read">Reading</span><span class="tag t-badge">Badge: Short-a Ace</span></div><div class="links"><a class="btn primary" href="KCE_RF_U2L1_ShortA.html">Open lesson</a></div></article>
+<article class="card" data-id="U2L2"><div class="wk">Unit 2 · Lesson 2</div><h3>Short i</h3><p class="sub">pig, sit, win</p><div class="tags"><span class="tag t-read">Reading</span><span class="tag t-badge">Badge: Short-i Star</span></div><div class="links"><a class="btn primary" href="KCE_RF_U2L2_ShortI.html">Open lesson</a></div></article>
+<article class="card" data-id="U2L3"><div class="wk">Unit 2 · Lesson 3</div><h3>Short o</h3><p class="sub">dog, hop, box</p><div class="tags"><span class="tag t-read">Reading</span><span class="tag t-badge">Badge: Short-o Hero</span></div><div class="links"><a class="btn primary" href="KCE_RF_U2L3_ShortO.html">Open lesson</a></div></article>
+<article class="card" data-id="U2L4"><div class="wk">Unit 2 · Lesson 4</div><h3>Short u</h3><p class="sub">sun, bug, cup</p><div class="tags"><span class="tag t-read">Reading</span><span class="tag t-badge">Badge: Short-u Champ</span></div><div class="links"><a class="btn primary" href="KCE_RF_U2L4_ShortU.html">Open lesson</a></div></article>
+<article class="card" data-id="U2L5"><div class="wk">Unit 2 · Lesson 5</div><h3>Short e</h3><p class="sub">bed, hen, ten</p><div class="tags"><span class="tag t-read">Reading</span><span class="tag t-badge">Badge: Short-e Expert</span></div><div class="links"><a class="btn primary" href="KCE_RF_U2L5_ShortE.html">Open lesson</a></div></article>
+<article class="card" data-id="U2L6"><div class="wk">Unit 2 · Lesson 6</div><h3>Build-a-Word</h3><p class="sub">Blending CVC words</p><div class="tags"><span class="tag t-read">Reading</span><span class="tag t-badge">Badge: Word Builder</span></div><div class="links"><a class="btn primary" href="KCE_RF_U2L6_BuildAWord.html">Open lesson</a></div></article>
+<article class="card" data-id="U2L7"><div class="wk">Unit 2 · Lesson 7</div><h3>Reading CVC Sentences</h3><p class="sub">Words into sentences</p><div class="tags"><span class="tag t-read">Reading</span><span class="tag t-badge">Badge: Sentence Reader</span></div><div class="links"><a class="btn primary" href="KCE_RF_U2L7_CVCSentences.html">Open lesson</a></div></article>
+<article class="card milestone" data-id="U2L8"><div class="wk">Unit 2 · Capstone</div><h3>CVC Champion</h3><p class="sub">Unit 2 capstone</p><div class="tags"><span class="tag t-read">Reading</span><span class="tag t-badge">Badge: CVC Champion</span></div><div class="links"><a class="btn primary" href="KCE_RF_U2L8_CVCChampion.html">Open capstone</a></div></article>
+  </div>
+  <section class="block"><div class="fl"></div><h2>Unit 3 · Digraphs</h2><p>Two letters, one sound.</p></section>
+  <div class="grid">
+<article class="card" data-id="U3L1"><div class="wk">Unit 3 · Lesson 1</div><h3>sh</h3><p class="sub">ship, fish, wish</p><div class="tags"><span class="tag t-read">Reading</span><span class="tag t-badge">Badge: Sh Specialist</span></div><div class="links"><a class="btn primary" href="KCE_RF_U3L1_SH.html">Open lesson</a></div></article>
+<article class="card" data-id="U3L2"><div class="wk">Unit 3 · Lesson 2</div><h3>ch</h3><p class="sub">chip, lunch, rich</p><div class="tags"><span class="tag t-read">Reading</span><span class="tag t-badge">Badge: Ch Champion</span></div><div class="links"><a class="btn primary" href="KCE_RF_U3L2_CH.html">Open lesson</a></div></article>
+<article class="card" data-id="U3L3"><div class="wk">Unit 3 · Lesson 3</div><h3>th</h3><p class="sub">this, bath, with</p><div class="tags"><span class="tag t-read">Reading</span><span class="tag t-badge">Badge: Th Thinker</span></div><div class="links"><a class="btn primary" href="KCE_RF_U3L3_TH.html">Open lesson</a></div></article>
+<article class="card" data-id="U3L4"><div class="wk">Unit 3 · Lesson 4</div><h3>wh</h3><p class="sub">when, whip, which</p><div class="tags"><span class="tag t-read">Reading</span><span class="tag t-badge">Badge: Wh Whiz</span></div><div class="links"><a class="btn primary" href="KCE_RF_U3L4_WH.html">Open lesson</a></div></article>
+<article class="card" data-id="U3L5"><div class="wk">Unit 3 · Lesson 5</div><h3>ck</h3><p class="sub">duck, sock, kick</p><div class="tags"><span class="tag t-read">Reading</span><span class="tag t-badge">Badge: Ck Captain</span></div><div class="links"><a class="btn primary" href="KCE_RF_U3L5_CK.html">Open lesson</a></div></article>
+<article class="card" data-id="U3L6"><div class="wk">Unit 3 · Lesson 6</div><h3>ng</h3><p class="sub">ring, sing, long</p><div class="tags"><span class="tag t-read">Reading</span><span class="tag t-badge">Badge: Ng Ninja</span></div><div class="links"><a class="btn primary" href="KCE_RF_U3L6_NG.html">Open lesson</a></div></article>
+<article class="card" data-id="U3L7"><div class="wk">Unit 3 · Lesson 7</div><h3>Digraph Mix &amp; Read</h3><p class="sub">Reading mixed digraphs</p><div class="tags"><span class="tag t-read">Reading</span><span class="tag t-badge">Badge: Digraph Reader</span></div><div class="links"><a class="btn primary" href="KCE_RF_U3L7_MixRead.html">Open lesson</a></div></article>
+<article class="card milestone" data-id="U3L8"><div class="wk">Unit 3 · Capstone</div><h3>Digraph Detective</h3><p class="sub">Unit 3 capstone</p><div class="tags"><span class="tag t-read">Reading</span><span class="tag t-badge">Badge: Digraph Detective</span></div><div class="links"><a class="btn primary" href="KCE_RF_U3L8_DigraphDetective.html">Open capstone</a></div></article>
+  </div>
+  <section class="block"><div class="fl"></div><h2>Unit 4 · Blends</h2><p>Two sounds that blend together.</p></section>
+  <div class="grid">
+<article class="card" data-id="U4L1"><div class="wk">Unit 4 · Lesson 1</div><h3>l-blends</h3><p class="sub">bl, cl, fl, gl, pl, sl</p><div class="tags"><span class="tag t-read">Reading</span><span class="tag t-badge">Badge: L-Blend Leader</span></div><div class="links"><a class="btn primary" href="KCE_RF_U4L1_LBlends.html">Open lesson</a></div></article>
+<article class="card" data-id="U4L2"><div class="wk">Unit 4 · Lesson 2</div><h3>r-blends</h3><p class="sub">br, cr, dr, fr, gr, tr</p><div class="tags"><span class="tag t-read">Reading</span><span class="tag t-badge">Badge: R-Blend Ranger</span></div><div class="links"><a class="btn primary" href="KCE_RF_U4L2_RBlends.html">Open lesson</a></div></article>
+<article class="card" data-id="U4L3"><div class="wk">Unit 4 · Lesson 3</div><h3>s-blends</h3><p class="sub">sc, sk, sn, sp, st, sw</p><div class="tags"><span class="tag t-read">Reading</span><span class="tag t-badge">Badge: S-Blend Star</span></div><div class="links"><a class="btn primary" href="KCE_RF_U4L3_SBlends.html">Open lesson</a></div></article>
+<article class="card" data-id="U4L4"><div class="wk">Unit 4 · Lesson 4</div><h3>Ending blends</h3><p class="sub">-st, -nd, -mp, -nt</p><div class="tags"><span class="tag t-read">Reading</span><span class="tag t-badge">Badge: Ending Ace</span></div><div class="links"><a class="btn primary" href="KCE_RF_U4L4_EndBlends.html">Open lesson</a></div></article>
+<article class="card" data-id="U4L5"><div class="wk">Unit 4 · Lesson 5</div><h3>Reading Blend Words</h3><p class="sub">Decoding blends</p><div class="tags"><span class="tag t-read">Reading</span><span class="tag t-badge">Badge: Blend Reader</span></div><div class="links"><a class="btn primary" href="KCE_RF_U4L5_ReadBlends.html">Open lesson</a></div></article>
+<article class="card" data-id="U4L6"><div class="wk">Unit 4 · Lesson 6</div><h3>Build-a-Word (blends)</h3><p class="sub">Making blend words</p><div class="tags"><span class="tag t-read">Reading</span><span class="tag t-badge">Badge: Word-Building Whiz</span></div><div class="links"><a class="btn primary" href="KCE_RF_U4L6_BuildBlend.html">Open lesson</a></div></article>
+<article class="card" data-id="U4L7"><div class="wk">Unit 4 · Lesson 7</div><h3>Blend Sentences &amp; Fluency</h3><p class="sub">Reading smoothly</p><div class="tags"><span class="tag t-read">Reading</span><span class="tag t-badge">Badge: Fluent Friend</span></div><div class="links"><a class="btn primary" href="KCE_RF_U4L7_BlendSentences.html">Open lesson</a></div></article>
+<article class="card milestone" data-id="U4L8"><div class="wk">Unit 4 · Capstone</div><h3>Blend Builder</h3><p class="sub">Unit 4 capstone</p><div class="tags"><span class="tag t-read">Reading</span><span class="tag t-badge">Badge: Blend Champion</span></div><div class="links"><a class="btn primary" href="KCE_RF_U4L8_BlendChampion.html">Open capstone</a></div></article>
+  </div>
+  <section class="block"><div class="fl"></div><h2>Unit 5 · Long Vowels: Magic e</h2><p>The silent e that says the name.</p></section>
+  <div class="grid">
+<article class="card" data-id="U5L1"><div class="wk">Unit 5 · Lesson 1</div><h3>a_e (cake)</h3><p class="sub">made, lake, gate</p><div class="tags"><span class="tag t-read">Reading</span><span class="tag t-badge">Badge: Magic-a Maker</span></div><div class="links"><a class="btn primary" href="KCE_RF_U5L1_AE.html">Open lesson</a></div></article>
+<article class="card" data-id="U5L2"><div class="wk">Unit 5 · Lesson 2</div><h3>i_e (bike)</h3><p class="sub">time, ride, kite</p><div class="tags"><span class="tag t-read">Reading</span><span class="tag t-badge">Badge: Magic-i Maker</span></div><div class="links"><a class="btn primary" href="KCE_RF_U5L2_IE.html">Open lesson</a></div></article>
+<article class="card" data-id="U5L3"><div class="wk">Unit 5 · Lesson 3</div><h3>o_e (home)</h3><p class="sub">note, rose, bone</p><div class="tags"><span class="tag t-read">Reading</span><span class="tag t-badge">Badge: Magic-o Maker</span></div><div class="links"><a class="btn primary" href="KCE_RF_U5L3_OE.html">Open lesson</a></div></article>
+<article class="card" data-id="U5L4"><div class="wk">Unit 5 · Lesson 4</div><h3>u_e (cube)</h3><p class="sub">tune, cute, mule</p><div class="tags"><span class="tag t-read">Reading</span><span class="tag t-badge">Badge: Magic-u Maker</span></div><div class="links"><a class="btn primary" href="KCE_RF_U5L4_UE.html">Open lesson</a></div></article>
+<article class="card" data-id="U5L5"><div class="wk">Unit 5 · Lesson 5</div><h3>e_e (these)</h3><p class="sub">Pete, eve, theme</p><div class="tags"><span class="tag t-read">Reading</span><span class="tag t-badge">Badge: Magic-e Maker</span></div><div class="links"><a class="btn primary" href="KCE_RF_U5L5_EE.html">Open lesson</a></div></article>
+<article class="card" data-id="U5L6"><div class="wk">Unit 5 · Lesson 6</div><h3>Short vs. Long</h3><p class="sub">cap vs. cape</p><div class="tags"><span class="tag t-read">Reading</span><span class="tag t-badge">Badge: Vowel Switch Star</span></div><div class="links"><a class="btn primary" href="KCE_RF_U5L6_ShortVsLong.html">Open lesson</a></div></article>
+<article class="card" data-id="U5L7"><div class="wk">Unit 5 · Lesson 7</div><h3>Magic-e Sentences &amp; Fluency</h3><p class="sub">Reading magic-e text</p><div class="tags"><span class="tag t-read">Reading</span><span class="tag t-badge">Badge: Magic Reader</span></div><div class="links"><a class="btn primary" href="KCE_RF_U5L7_MagicSentences.html">Open lesson</a></div></article>
+<article class="card milestone" data-id="U5L8"><div class="wk">Unit 5 · Capstone</div><h3>Magic-e Master</h3><p class="sub">Unit 5 capstone</p><div class="tags"><span class="tag t-read">Reading</span><span class="tag t-badge">Badge: Magic-e Master</span></div><div class="links"><a class="btn primary" href="KCE_RF_U5L8_MagicMaster.html">Open capstone</a></div></article>
+  </div>
+  <section class="block"><div class="fl"></div><h2>Unit 6 · Vowel Teams</h2><p>Two vowels working together.</p></section>
+  <div class="grid">
+<article class="card" data-id="U6L1"><div class="wk">Unit 6 · Lesson 1</div><h3>ai / ay</h3><p class="sub">rain, play, day</p><div class="tags"><span class="tag t-read">Reading</span><span class="tag t-badge">Badge: AI-AY Ace</span></div><div class="links"><a class="btn primary" href="KCE_RF_U6L1_AIAY.html">Open lesson</a></div></article>
+<article class="card" data-id="U6L2"><div class="wk">Unit 6 · Lesson 2</div><h3>ee / ea</h3><p class="sub">feet, read, beach</p><div class="tags"><span class="tag t-read">Reading</span><span class="tag t-badge">Badge: EE-EA Expert</span></div><div class="links"><a class="btn primary" href="KCE_RF_U6L2_EEEA.html">Open lesson</a></div></article>
+<article class="card" data-id="U6L3"><div class="wk">Unit 6 · Lesson 3</div><h3>oa / ow</h3><p class="sub">boat, snow, grow</p><div class="tags"><span class="tag t-read">Reading</span><span class="tag t-badge">Badge: OA-OW Owl</span></div><div class="links"><a class="btn primary" href="KCE_RF_U6L3_OAOW.html">Open lesson</a></div></article>
+<article class="card" data-id="U6L4"><div class="wk">Unit 6 · Lesson 4</div><h3>igh</h3><p class="sub">light, night, high</p><div class="tags"><span class="tag t-read">Reading</span><span class="tag t-badge">Badge: IGH Star</span></div><div class="links"><a class="btn primary" href="KCE_RF_U6L4_IGH.html">Open lesson</a></div></article>
+<article class="card" data-id="U6L5"><div class="wk">Unit 6 · Lesson 5</div><h3>oo (two sounds)</h3><p class="sub">moon, book</p><div class="tags"><span class="tag t-read">Reading</span><span class="tag t-badge">Badge: OO Champion</span></div><div class="links"><a class="btn primary" href="KCE_RF_U6L5_OO.html">Open lesson</a></div></article>
+<article class="card" data-id="U6L6"><div class="wk">Unit 6 · Lesson 6</div><h3>Vowel Team Mix &amp; Read</h3><p class="sub">Reading mixed teams</p><div class="tags"><span class="tag t-read">Reading</span><span class="tag t-badge">Badge: Team Reader</span></div><div class="links"><a class="btn primary" href="KCE_RF_U6L6_TeamMix.html">Open lesson</a></div></article>
+<article class="card" data-id="U6L7"><div class="wk">Unit 6 · Lesson 7</div><h3>Vowel Team Sentences &amp; Fluency</h3><p class="sub">Reading team text</p><div class="tags"><span class="tag t-read">Reading</span><span class="tag t-badge">Badge: Fluent Voyager</span></div><div class="links"><a class="btn primary" href="KCE_RF_U6L7_TeamSentences.html">Open lesson</a></div></article>
+<article class="card milestone" data-id="U6L8"><div class="wk">Unit 6 · Capstone</div><h3>Vowel Team Voyager</h3><p class="sub">Unit 6 capstone</p><div class="tags"><span class="tag t-read">Reading</span><span class="tag t-badge">Badge: Vowel Team Voyager</span></div><div class="links"><a class="btn primary" href="KCE_RF_U6L8_TeamVoyager.html">Open capstone</a></div></article>
+  </div>
+  <section class="block"><div class="fl"></div><h2>Unit 7 · R-Controlled (Bossy R)</h2><p>When r changes the vowel.</p></section>
+  <div class="grid">
+<article class="card" data-id="U7L1"><div class="wk">Unit 7 · Lesson 1</div><h3>ar</h3><p class="sub">car, star, park</p><div class="tags"><span class="tag t-read">Reading</span><span class="tag t-badge">Badge: AR Ace</span></div><div class="links"><a class="btn primary" href="KCE_RF_U7L1_AR.html">Open lesson</a></div></article>
+<article class="card" data-id="U7L2"><div class="wk">Unit 7 · Lesson 2</div><h3>or</h3><p class="sub">corn, fork, born</p><div class="tags"><span class="tag t-read">Reading</span><span class="tag t-badge">Badge: OR Owl</span></div><div class="links"><a class="btn primary" href="KCE_RF_U7L2_OR.html">Open lesson</a></div></article>
+<article class="card" data-id="U7L3"><div class="wk">Unit 7 · Lesson 3</div><h3>er</h3><p class="sub">her, fern, water</p><div class="tags"><span class="tag t-read">Reading</span><span class="tag t-badge">Badge: ER Expert</span></div><div class="links"><a class="btn primary" href="KCE_RF_U7L3_ER.html">Open lesson</a></div></article>
+<article class="card" data-id="U7L4"><div class="wk">Unit 7 · Lesson 4</div><h3>ir</h3><p class="sub">bird, girl, first</p><div class="tags"><span class="tag t-read">Reading</span><span class="tag t-badge">Badge: IR Star</span></div><div class="links"><a class="btn primary" href="KCE_RF_U7L4_IR.html">Open lesson</a></div></article>
+<article class="card" data-id="U7L5"><div class="wk">Unit 7 · Lesson 5</div><h3>ur</h3><p class="sub">turn, hurt, curl</p><div class="tags"><span class="tag t-read">Reading</span><span class="tag t-badge">Badge: UR Champion</span></div><div class="links"><a class="btn primary" href="KCE_RF_U7L5_UR.html">Open lesson</a></div></article>
+<article class="card" data-id="U7L6"><div class="wk">Unit 7 · Lesson 6</div><h3>er / ir / ur all say /er/</h3><p class="sub">Same sound, 3 spellings</p><div class="tags"><span class="tag t-read">Reading</span><span class="tag t-badge">Badge: Bossy-R Brain</span></div><div class="links"><a class="btn primary" href="KCE_RF_U7L6_ErIrUr.html">Open lesson</a></div></article>
+<article class="card" data-id="U7L7"><div class="wk">Unit 7 · Lesson 7</div><h3>Bossy-R Sentences &amp; Fluency</h3><p class="sub">Reading bossy-r text</p><div class="tags"><span class="tag t-read">Reading</span><span class="tag t-badge">Badge: Bossy Reader</span></div><div class="links"><a class="btn primary" href="KCE_RF_U7L7_BossySentences.html">Open lesson</a></div></article>
+<article class="card milestone" data-id="U7L8"><div class="wk">Unit 7 · Capstone</div><h3>Bossy-R Boss</h3><p class="sub">Unit 7 capstone</p><div class="tags"><span class="tag t-read">Reading</span><span class="tag t-badge">Badge: Bossy-R Boss</span></div><div class="links"><a class="btn primary" href="KCE_RF_U7L8_BossyRBoss.html">Open capstone</a></div></article>
+  </div>
+  <section class="block"><div class="fl"></div><h2>Unit 8 · Diphthongs &amp; Reading for Meaning</h2><p>Gliding sounds + comprehension.</p></section>
+  <div class="grid">
+<article class="card" data-id="U8L1"><div class="wk">Unit 8 · Lesson 1</div><h3>oi / oy</h3><p class="sub">coin, boy, join</p><div class="tags"><span class="tag t-read">Reading</span><span class="tag t-badge">Badge: OI-OY Star</span></div><div class="links"><a class="btn primary" href="KCE_RF_U8L1_OIOY.html">Open lesson</a></div></article>
+<article class="card" data-id="U8L2"><div class="wk">Unit 8 · Lesson 2</div><h3>ou / ow</h3><p class="sub">cloud, cow, out</p><div class="tags"><span class="tag t-read">Reading</span><span class="tag t-badge">Badge: OU-OW Owl</span></div><div class="links"><a class="btn primary" href="KCE_RF_U8L2_OUOW.html">Open lesson</a></div></article>
+<article class="card" data-id="U8L3"><div class="wk">Unit 8 · Lesson 3</div><h3>Syllables</h3><p class="sub">Reading bigger words</p><div class="tags"><span class="tag t-read">Reading</span><span class="tag t-badge">Badge: Syllable Slicer</span></div><div class="links"><a class="btn primary" href="KCE_RF_U8L3_Syllables.html">Open lesson</a></div></article>
+<article class="card" data-id="U8L4"><div class="wk">Unit 8 · Lesson 4</div><h3>Reading with Expression</h3><p class="sub">Reading like a storyteller</p><div class="tags"><span class="tag t-read">Reading</span><span class="tag t-badge">Badge: Expression Expert</span></div><div class="links"><a class="btn primary" href="KCE_RF_U8L4_Expression.html">Open lesson</a></div></article>
+<article class="card" data-id="U8L5"><div class="wk">Unit 8 · Lesson 5</div><h3>Who / What / Where</h3><p class="sub">Understanding the story</p><div class="tags"><span class="tag t-read">Reading</span><span class="tag t-badge">Badge: Detail Detective</span></div><div class="links"><a class="btn primary" href="KCE_RF_U8L5_WhoWhatWhere.html">Open lesson</a></div></article>
+<article class="card" data-id="U8L6"><div class="wk">Unit 8 · Lesson 6</div><h3>Retell &amp; Sequence</h3><p class="sub">First, next, last</p><div class="tags"><span class="tag t-read">Reading</span><span class="tag t-badge">Badge: Story Sequencer</span></div><div class="links"><a class="btn primary" href="KCE_RF_U8L6_Sequence.html">Open lesson</a></div></article>
+<article class="card" data-id="U8L7"><div class="wk">Unit 8 · Lesson 7</div><h3>Putting It All Together</h3><p class="sub">Using every skill</p><div class="tags"><span class="tag t-read">Reading</span><span class="tag t-badge">Badge: Reading Rockstar</span></div><div class="links"><a class="btn primary" href="KCE_RF_U8L7_AllTogether.html">Open lesson</a></div></article>
+<article class="card milestone" data-id="U8L8"><div class="wk">Unit 8 · Capstone</div><h3>Reading Star (Year-End)</h3><p class="sub">Year-end capstone</p><div class="tags"><span class="tag t-read">Reading</span><span class="tag t-badge">Badge: Reading Star</span></div><div class="links"><a class="btn primary" href="KCE_RF_U8L8_ReadingStar.html">Open capstone</a></div></article>
+  </div>
+</main>
+<footer><div class="wrap">
+  <div><div class="fl"></div><b>KingCretot Experience</b> · Reading Foundations — Grades 2–3 &nbsp;·&nbsp; <button class="reset" id="reset">Reset progress (new reader)</button></div>
+  <div>kce@kingcretot.com &nbsp;·&nbsp; 914-809-0112 &nbsp;·&nbsp; PO Box 2322, Arcadia, FL 34265</div>
+</div></footer>
+<script>
+(function(){
+  var pass={};try{pass=JSON.parse(localStorage.getItem('kce_rf_pass')||'{}')}catch(e){}
+  var done=0;
+  document.querySelectorAll('.card[data-id]').forEach(function(c){
+    var p=pass[c.dataset.id]; if(p===undefined) return; done++;
+    c.classList.add('done');
+    var t=document.createElement('span');t.className='tag t-pass';t.textContent='\u2713 Passed '+p+'%';
+    c.querySelector('.tags').appendChild(t);
+  });
+  if(done) document.getElementById('prog').innerHTML='<b>'+done+' of 64 lessons passed</b> on this device.';
+  document.getElementById('reset').addEventListener('click',function(){
+    if(!confirm('Clear all saved progress, badges and the reader name on this device?')) return;
+    try{['kce_rf_pass','kce_rf_badges','kce_rf_name','kce_rf_override_start'].forEach(function(k){localStorage.removeItem(k)});
+    Object.keys(localStorage).forEach(function(k){if(k.indexOf('kce_rf_attempts_')===0)localStorage.removeItem(k)});}catch(e){}
+    location.reload();
+  });
+})();
+</script>
+</body>
+</html>
